@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #005c95;
+  --color-primary-container: #0075bc;
+  --color-primary-fixed: #d0e4ff;
+  --color-primary-fixed-dim: #9acbff;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #f2f6ff;
+
+  --color-secondary: #49607e;
+  --color-secondary-container: #c4dcff;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #49617f;
+
+  --color-tertiary: #005f84;
+  --color-tertiary-container: #0079a7;
+  
+  --color-surface: #f7f9ff;
+  --color-surface-dim: #cadcf0;
+  --color-surface-bright: #f7f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #edf4ff;
+  --color-surface-container: #e2efff;
+  --color-surface-container-high: #d8eafe;
+  --color-surface-container-highest: #d3e4f8;
+
+  --color-surface-dark: #0E1E28;
+  --color-surface-dark-subtle: #162B38;
+  --color-gas-cyan: #38BDF8;
+  --color-accent-emerald: #10B981;
+  --color-status-warning: #F59E0B;
+  --color-status-danger: #EF4444;
+
+  --color-on-surface: #0b1d2b;
+  --color-on-surface-variant: #404751;
+  --color-inverse-surface: #213241;
+  --color-inverse-on-surface: #e7f2ff;
+  --color-outline: #707882;
+  --color-outline-variant: #c0c7d2;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom typography scale matching design tokens */
+.font-display-hero {
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.font-headline-lg {
+  font-size: clamp(26px, 3vw, 36px);
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-headline-md {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.font-headline-sm {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.font-metric-kpi {
+  font-size: clamp(32px, 3.5vw, 44px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.font-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.font-label-badge {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.font-label-button {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.py-space-3xl {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.pb-space-3xl {
+  padding-bottom: 6rem;
+}
+
+.pt-space-2xl {
+  padding-top: 4rem;
+}
+
+.pb-space-2xl {
+  padding-bottom: 4rem;
+}
+
+.py-space-2xl {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.pt-space-xl {
+  padding-top: 2.5rem;
+}
+
+.pb-space-xl {
+  padding-bottom: 2.5rem;
+}
+
+.pt-space-lg {
+  padding-top: 1.5rem;
+}

@@ -19,6 +19,7 @@ import { NoticeDetailModal } from './components/NoticeDetailModal';
 import { MSDSViewerModal } from './components/MSDSViewerModal';
 import { CompanyModal } from './components/CompanyModal';
 import { PrivacyModal } from './components/PrivacyModal';
+import { ChatbotWidget } from './components/ChatbotWidget';
 import { ProductItem, NewsItem, NEWS_DATA } from './data/portalData';
 
 export default function App() {
@@ -173,6 +174,14 @@ export default function App() {
       <PrivacyModal
         isOpen={privacyModalOpen}
         onClose={() => setPrivacyModalOpen(false)}
+      />
+
+      {/* MS GAS AI Smart Chatbot */}
+      <ChatbotWidget
+        onOpenInquiry={(product) => handleOpenInquiry(product)}
+        onOpenBranches={() => setBranchesModalOpen(true)}
+        onOpenMSDS={(gas) => handleOpenMSDS(gas)}
+        lang={lang}
       />
     </div>
   );
